@@ -20,27 +20,25 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Nick Krzemienski",
+  title: "Hi all, I'm Nick",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Engineering Lead, Video Innovations @ fuboTV with 12+ years of experience in software engineering management and technical leadership 🚀 specializing in video streaming technologies, containerization, and cloud infrastructure."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "Nick_Krzemienski_072024_cv.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
+  github: "https://github.com/krzemienski",
+  linkedin: "https://www.linkedin.com/in/krzemienski/",
+  gmail: "krzemienski@gmail.com",
+  twitter: "https://twitter.com/nkrzemienski",
+  portfolio: "http://awesome.video",
+  // Instagram and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
 };
@@ -49,14 +47,17 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "ENGINEERING LEAD PASSIONATE ABOUT VIDEO STREAMING TECHNOLOGIES AND CLOUD INFRASTRUCTURE",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Server-side multi-view systems integrating multiple video feeds within a single player interface"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Just-in-time transcoding and packaging solutions for HEVC files in Kubernetes"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Video encoding and packaging pipelines with dual-format support (HEVC and AVC)"
+    ),
+    emoji(
+      "⚡ Containerized applications using AWS, Docker, and Kubernetes for optimized efficiency"
     )
   ],
 
@@ -65,56 +66,44 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "AWS",
+      fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "Docker",
+      fontAwesomeClassname: "fab fa-docker"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "Kubernetes",
+      fontAwesomeClassname: "fas fa-dharmachakra"
+    },
+    {
+      skillName: "Swift",
+      fontAwesomeClassname: "fab fa-swift"
     },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "iOS",
+      fontAwesomeClassname: "fab fa-apple"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "tvOS",
+      fontAwesomeClassname: "fas fa-tv"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "FFmpeg",
+      fontAwesomeClassname: "fas fa-film"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "Video Streaming",
+      fontAwesomeClassname: "fas fa-video"
     },
     {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "Cloud Infrastructure",
+      fontAwesomeClassname: "fas fa-cloud"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -126,23 +115,12 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Iona College",
+      logo: require("./assets/images/ionaLogo.png"),
+      subHeader: "Bachelor of Computer Science",
+      duration: "2008 - 2012",
+      desc: "Completed degree in Computer Science building a foundation for a career in software engineering and technical leadership.",
+      descBullets: []
     }
   ]
 };
@@ -153,16 +131,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Video Technologies", //Insert stack or technology you have experience in
+      progressPercentage: "95%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Cloud Infrastructure",
+      progressPercentage: "90%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Software Engineering Management",
+      progressPercentage: "85%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -174,29 +152,91 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Engineering Lead, Video Innovations",
+      company: "fuboTV Inc.",
+      companylogo: require("./assets/images/fuboTVLogo.png"),
+      date: "March 2022 – June 2024",
+      desc: "Led the development of server-side multi-view systems and just-in-time transcoding solutions.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Led the development of server-side multi-view systems integrating multiple video feeds within a single player interface",
+        "Engineered a just-in-time transcoding and packaging solution for HEVC files, deployed in Kubernetes",
+        "Ensured high availability and service reliability through containerized applications management",
+        "Implemented persistent volumes and stateful sets for effective data management",
+        "Collaborated with cross-functional teams to design scalable and efficient solutions"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Engineering Lead, VOD Encoding & Operations",
+      company: "fuboTV Inc.",
+      companylogo: require("./assets/images/fuboTVLogo.png"),
+      date: "February 2018 – February 2022",
+      desc: "Directed the in-house development of the VOD encoding and packaging pipeline with dual-format support.",
+      descBullets: [
+        "Led encoding, packaging, and operations of VODs, delivering approximately 500 hours of assets daily",
+        "Implemented dual-format support (HEVC and AVC) to significantly enhance video quality and streaming performance",
+        "Leveraged AWS Spot Instances and container-based infrastructure to reduce costs by approximately 70%",
+        "Engineered multiple codec streaming with DASH and HLS assets for 4K content",
+        "Built and maintained a serverless CDN Edge for seamless playback across all OTT devices",
+        "Designed and implemented a live-to-VOD generator for DRM-protected playback"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Engineering Manager, AppleTV & Roku",
+      company: "fuboTV Inc.",
+      companylogo: require("./assets/images/fuboTVLogo.png"),
+      date: "February 2018 – November 2018",
+      desc: "Oversaw product roadmaps and engineering teams for the AppleTV and Roku platforms.",
+      descBullets: [
+        "Hired, managed, and mentored a team of 10 software engineers in the NYC office",
+        "Responsible for both fuboTV's AppleTV & Roku teams' product roadmap and engineering goals",
+        "Contributed code to both Roku & AppleTV teams as an IC, while managing",
+        "Designed and implemented workflow automation integrating with Jira",
+        "Developed testing harnesses to run complex automation suites on an in-house device farm",
+        "Helped build and deliver the first ever UHD/HDR10 live feed for OTT during World Cup 2018"
+      ]
+    },
+    {
+      role: "Software Engineer, iOS",
+      company: "fuboTV Inc.",
+      companylogo: require("./assets/images/fuboTVLogo.png"),
+      date: "May 2017 – February 2018",
+      desc: "Developed innovative iOS solutions, enhancing the overall streaming platform capabilities.",
+      descBullets: [
+        "Rewrote fuboTV's Swift player framework from the ground up",
+        "Reduced dependency on 3rd party vendor SDKs",
+        "Designed and measured overall video quality experience",
+        "Leveraged Apple's AVFrameworks",
+        "Built & designed fuboTV's In App Billing system for iTunes and Roku subscriptions"
+      ]
+    },
+    {
+      role: "Principal Developer & Founder",
+      company: "KODA LABS INC.",
+      companylogo: require("./assets/images/kodaLabsLogo.png"),
+      date: "October 2013 – May 2017",
+      desc: "Led mobile and web development projects, driving innovation in media delivery and streaming solutions.",
+      descBullets: [
+        "Hired, managed, and mentored a team of 3 developers and various contractors",
+        "Completed over 15 successful client projects using agile methodologies",
+        "Utilized Apple's latest iOS APIs and frameworks for optimal user experience",
+        "Designed and developed numerous custom APIs leveraging AWS",
+        "Integrated WebRTC technologies for video and text chat capabilities",
+        "Built & designed 4 different games in Unity3D with user bases over 1 million users"
+      ]
+    },
+    {
+      role: "Squad Leader",
+      company: "United States Marine Corps Reserve",
+      companylogo: require("./assets/images/usmcLogo.png"),
+      date: "December 2008 – January 2015",
+      desc: "Commanded teams in high-pressure environments, fostering leadership, discipline, and strategic execution.",
+      descBullets: [
+        "Directly responsible for the actions and well-being of Marines under command",
+        "Coordinated movement and employment of various weapons systems to complete missions",
+        "Developed proficiency in giving and receiving orders under stressful environments",
+        "Led team by adhering to the three core values: Honor, Courage, and Commitment",
+        "Reached the rank of Sergeant in less than 4 years"
+      ]
     }
   ]
 };
@@ -205,36 +245,46 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Major Projects",
+  subtitle: "SOME OF THE SIGNIFICANT PROJECTS I'VE WORKED ON",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/multiview.png"),
+      projectName: "Server-Side Multi-View Systems",
+      projectDesc: "Development of systems that integrate multiple video feeds within a single player interface, enhancing the viewer experience for sports and other multi-feed content.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "http://awesome.video"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/transcoding.png"),
+      projectName: "Just-in-Time Transcoding",
+      projectDesc: "Created and deployed a solution for just-in-time transcoding and packaging of HEVC files, deployed in Kubernetes to boost scalability and efficiency.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "http://awesome.video"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/vodpipeline.png"),
+      projectName: "VOD Encoding Pipeline",
+      projectDesc: "Led the in-house development of the VOD encoding and packaging pipeline with dual-format support (HEVC and AVC) to enhance video quality and streaming performance.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://awesome.video"
         }
       ]
     }
@@ -246,56 +296,46 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Achievements And Leadership 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Achievements and Leadership Roles in the Video Streaming Space",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Pioneered Shared Swift Library",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Developed a shared Swift library for iOS/tvOS apps, innovatively separating the UI from the player to enhance scalability.",
+      image: require("./assets/images/swiftLogo.png"),
+      imageAlt: "Swift Logo",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "Portfolio",
+          url: "http://awesome.video"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Connected Devices Strategy",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Managed the transformation of tvOS and Roku platforms toward a 'Connected Devices' strategy at fuboTV.",
+      image: require("./assets/images/connectedDevices.png"),
+      imageAlt: "Connected Devices",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Portfolio",
+          url: "http://awesome.video"
         }
       ]
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Marine Corps Leadership",
+      subtitle: "Served as Squad Leader in the United States Marine Corps Reserve, where duty, discipline, and strategic execution were paramount.",
+      image: require("./assets/images/usmcLogo.png"),
+      imageAlt: "USMC Logo",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Portfolio",
+          url: "http://awesome.video"
         }
       ]
     }
@@ -306,22 +346,22 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
+  title: "Publications",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+    "Technical insights and contributions to the video streaming industry",
+  displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "http://awesome.video",
+      title: "FFmpeg Research and Implementation",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "Insights into FFmpeg research, ISO standards, and encoding workflows for optimal video streaming performance."
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "http://awesome.video",
+      title: "Cloud Infrastructure for Video Streaming",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "Best practices for leveraging AWS, Docker, and Kubernetes in video streaming applications."
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -330,17 +370,29 @@ const blogSection = {
 // Talks Sections
 
 const talkSection = {
-  title: "TALKS",
+  title: "Industry Contributions",
   subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    "CONTRIBUTIONS TO VIDEO STREAMING TECHNOLOGIES AND INDUSTRY PRACTICES"
   ),
 
   talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
+      title: "Video Encoding Optimization",
+      subtitle: "Techniques for optimizing video encoding for OTT platforms",
+      slides_url: "http://awesome.video",
+      event_url: "http://awesome.video"
+    },
+    {
+      title: "Teaching Vets to Code",
+      subtitle: "Initiative to help veterans transition to careers in software development",
+      slides_url: "http://awesome.video",
+      event_url: "http://awesome.video"
+    },
+    {
+      title: "UHD/HDR10 Live Feed for OTT",
+      subtitle: "First ever UHD/HDR10 live feed for OTT during World Cup 2018",
+      slides_url: "http://awesome.video",
+      event_url: "http://awesome.video"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -349,37 +401,41 @@ const talkSection = {
 // Podcast Section
 
 const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
+  title: emoji("Technical Expertise 🎙️"),
+  subtitle: "AREAS OF TECHNICAL SPECIALIZATION",
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
+    "FFmpeg research and implementation",
+    "ISO standards for video encoding",
+    "AWS optimization for video streaming",
+    "Docker containerization for media applications",
+    "Kubernetes deployment for video processing"
   ],
   display: true // Set false to hide this section, defaults to true
 };
 
 // Resume Section
+
 const resumeSection = {
   title: "Resume",
-  subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
+  subtitle: "My professional journey and experience",
+  resumeLink: "Nick_Krzemienski_072024_cv.pdf", // Set to empty to hide the button
   display: true // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Discuss a project or just want to say hi? Feel free to reach out.",
+  number: "+1 914-649-5534",
+  email_address: "krzemienski@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
+  userName: "nkrzemienski", //Replace "twitter" with your twitter username without @
   display: true // Set true to display this section, defaults to false
 };
 
