@@ -23,7 +23,7 @@ const greeting = {
   username: "Nick Krzemienski",
   title: "Hi all, I'm Nick",
   subTitle: emoji(
-    "Engineering Lead, Video Innovations @ fuboTV with 12+ years of experience in software engineering management and technical leadership 🚀 specializing in video streaming technologies, containerization, and cloud infrastructure."
+    "Engineering Lead specializing in video streaming technologies, containerization, and cloud infrastructure 🚀"
   ),
   resumeLink:
     "Nick_Krzemienski_072024_cv.pdf", // Set to empty to hide the button
@@ -245,8 +245,25 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
-  display: false // Set false to hide this section, defaults to true
+  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  display: true, // Set false to hide this section, defaults to true
+  projects: [
+    {
+      projectName: "awesome-video",
+      projectDesc: "A curated list of video streaming resources. Everything about video streaming and media processing.",
+      repoUrl: "https://github.com/krzemienski/awesome-video"
+    },
+    {
+      projectName: "flacjacket",
+      projectDesc: "A Node.js module for integrating FLAC audio files with JavaScript applications.",
+      repoUrl: "https://github.com/krzemienski/flacjacket"
+    },
+    {
+      projectName: "deep-job-search",
+      projectDesc: "AI-powered job search tool to help find the perfect match for your career.",
+      repoUrl: "https://github.com/krzemienski/deep-job-search"
+    }
+  ]
 };
 
 // Some big projects you have worked on
@@ -292,55 +309,14 @@ const bigProjects = {
   display: true // Set false to hide this section, defaults to true
 };
 
-// Achievement Section
-// Include certificates, talks etc
+// Achievement Section - Removed as requested
 
 const achievementSection = {
   title: emoji("Achievements And Leadership 🏆 "),
   subtitle:
     "Achievements and Leadership Roles in the Video Streaming Space",
-
-  achievementsCards: [
-    {
-      title: "Pioneered Shared Swift Library",
-      subtitle:
-        "Developed a shared Swift library for iOS/tvOS apps, innovatively separating the UI from the player to enhance scalability.",
-      image: require("./assets/images/swiftLogo.png"),
-      imageAlt: "Swift Logo",
-      footerLink: [
-        {
-          name: "Portfolio",
-          url: "http://awesome.video"
-        }
-      ]
-    },
-    {
-      title: "Connected Devices Strategy",
-      subtitle:
-        "Managed the transformation of tvOS and Roku platforms toward a 'Connected Devices' strategy at fuboTV.",
-      image: require("./assets/images/connectedDevices.png"),
-      imageAlt: "Connected Devices",
-      footerLink: [
-        {
-          name: "Portfolio",
-          url: "http://awesome.video"
-        }
-      ]
-    },
-    {
-      title: "Marine Corps Leadership",
-      subtitle: "Served as Squad Leader in the United States Marine Corps Reserve, where duty, discipline, and strategic execution were paramount.",
-      image: require("./assets/images/usmcLogo.png"),
-      imageAlt: "USMC Logo",
-      footerLink: [
-        {
-          name: "Portfolio",
-          url: "http://awesome.video"
-        }
-      ]
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  achievementsCards: [],
+  display: false // Set to false to hide this section
 };
 
 // Blogs Section
@@ -377,22 +353,16 @@ const talkSection = {
 
   talks: [
     {
-      title: "Video Encoding Optimization",
-      subtitle: "Techniques for optimizing video encoding for OTT platforms",
-      slides_url: "http://awesome.video",
-      event_url: "http://awesome.video"
+      title: "HLS & DASH Multi-Codec Encoding and Packaging",
+      subtitle: "Video encoding optimization techniques for OTT platforms",
+      slides_url: "HLS & DASH multi codec encoding & packaging v1.2 09022020.pdf",
+      event_url: "https://youtu.be/g6C5qsQmEB8?si=v6wBOEu4HK9lK0IF"
     },
     {
-      title: "Teaching Vets to Code",
-      subtitle: "Initiative to help veterans transition to careers in software development",
-      slides_url: "http://awesome.video",
-      event_url: "http://awesome.video"
-    },
-    {
-      title: "UHD/HDR10 Live Feed for OTT",
-      subtitle: "First ever UHD/HDR10 live feed for OTT during World Cup 2018",
-      slides_url: "http://awesome.video",
-      event_url: "http://awesome.video"
+      title: "Advanced Video Streaming Technologies",
+      subtitle: "Deep dive into modern video delivery solutions",
+      slides_url: "HLS & DASH multi codec encoding & packaging v1.2 09022020.pdf",
+      event_url: "https://youtu.be/g6C5qsQmEB8?si=tm43yO8m4RAY5B6J"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -401,34 +371,17 @@ const talkSection = {
 // Podcast Section
 
 const podcastSection = {
-  title: emoji("Technical Expertise 🎙️"),
-  subtitle: "AREAS OF TECHNICAL SPECIALIZATION",
-
+  title: emoji("Podcast 🎙️"),
+  subtitle: "SHARE INSIGHTS ON VIDEO STREAMING TECHNOLOGY",
   // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "FFmpeg research and implementation",
-    "ISO standards for video encoding",
-    "AWS optimization for video streaming",
-    "Docker containerization for media applications",
-    "Kubernetes deployment for video processing"
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Resume Section
-
-const resumeSection = {
-  title: "Resume",
-  subtitle: "My professional journey and experience",
-  resumeLink: "Nick_Krzemienski_072024_cv.pdf", // Set to empty to hide the button
-  display: true // Set false to hide this section, defaults to true
+  podcast: [""],
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? Feel free to reach out.",
-  number: "+1 914-649-5534",
+    "Discuss opportunities or just say hi - my inbox is open for all.",
   email_address: "krzemienski@gmail.com"
 };
 
@@ -439,7 +392,7 @@ const twitterDetails = {
   display: true // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display in Contact Section.
 
 export {
   illustration,
@@ -458,6 +411,5 @@ export {
   podcastSection,
   contactInfo,
   twitterDetails,
-  isHireable,
-  resumeSection
+  isHireable
 };
